@@ -1,0 +1,30 @@
+<?php
+// module/Proposal/view/proposal/proposal/index.phtml:
+
+$title = 'My proposals';
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+<!-- <p>
+    <a href="<?php echo $this->url('proposal', array('action'=>'add'));?>">Add new proposal</a>
+</p> -->
+
+<table class="table">
+<tr>
+    <th>Estimated Cost</th>
+    <th>Estimated Time</th>
+    <th>&nbsp;</th>
+</tr>
+<?php foreach ($proposals as $proposal) : ?>
+<tr>
+    <td><?php echo $this->escapeHtml($proposal->est_cost);?></td>
+    <td><?php echo $this->escapeHtml($proposal->est_time);?></td>
+    <td>
+        <a href="<?php echo $this->url('proposal',
+            array('action'=>'edit', 'id' => $proposal->id));?>">Edit</a>
+        <a href="<?php echo $this->url('proposal',
+            array('action'=>'delete', 'id' => $proposal->id));?>">Delete</a>
+    </td>
+</tr>
+<?php endforeach; ?>
+</table>

@@ -1,0 +1,51 @@
+<?php
+// module/Project/view/project/project/index.phtml:
+
+$title = 'My projects';
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+<p>
+    <a href="<?php echo $this->url('project', array('action'=>'add'));?>">Add new project</a>
+</p>
+
+<div style="float:right; width:40%; height:300px; border:gray 1px solid;">
+	<div style="background:blue; padding:10px; color:white; width:100%; text-align:center; font-weight:bold;">
+		Sample Images
+	</div>
+
+</div>
+
+<table class="table" style="width:50%;">
+	<tr>
+		<th>Game</th>
+		<td><?php echo $this->escapeHtml($project->game);?></td>
+	</tr>
+	<tr>
+		<th>Count</th>
+		<td><?php echo $this->escapeHtml($project->count);?></td>
+	</tr>
+	<tr>
+		<th>Budget</th>
+		<td><?php echo $this->escapeHtml($project->budget);?></td>
+	</tr>
+	<tr>
+		<th>Detail Level</th>
+		<td><?php echo $this->escapeHtml($project->detail_level);?></td>
+	</tr>
+	<tr>
+		<th>Last Modified</th>
+		<td><?php echo $this->escapeHtml($project->date_modified);?></td>
+	</tr>
+	<tr>
+		<th>Created</th>
+		<td><?php echo $this->escapeHtml($project->date_created);?></td>
+	</tr>
+</table>
+<?php if($this->zfcUserIdentity()->getRoleID() != 2){ ?>
+<p><a class="btn btn-success" href="<?php echo $this->url('proposal',
+            array('action'=>'add', 'id' => $project->id));?>">Create Proposal</a></p>
+ <?php } else {?>
+<p><a class="btn btn-success" href="<?php echo $this->url('proposal',
+            array('action'=>'list', 'id' => $project->id));?>">View Proposals</a></p>
+<?php } ?>
