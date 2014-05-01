@@ -15,7 +15,7 @@ RewriteCond %{REQUEST_URI}::$1 ^(/.+)(.+)::\2$
 RewriteRule ^(.*) - [E=BASE:%1]
 RewriteRule ^(.*)$ %{ENV:BASE}index.php [NC,L]
 
-AuthUserFile C:\wamp\www\zf2-tutorial\public\.htpasswd
-AuthType Basic
-AuthName "Under Construction"
-Require valid-user
+#AuthUserFile C:\wamp\www\zf2-tutorial\public\.htpasswd
+#AuthType Basic
+#AuthName "Under Construction"
+#Require valid-user
