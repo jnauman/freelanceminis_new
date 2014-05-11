@@ -51,6 +51,7 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                        <li class="active"><a href="<?php echo $this->url('about') ?>">About Us</a></li>
                         <?php if($this->zfcUserIdentity()){ ?>
                             <?php if($this->zfcUserIdentity()->getRoleID() != 2){ ?>
                                 <li class="active"><a href="<?php echo $this->url('proposal') ?>"><?php echo $this->translate('Proposals') ?></a></li>
