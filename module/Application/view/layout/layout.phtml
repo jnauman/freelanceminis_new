@@ -52,8 +52,7 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
                         <?php if($this->zfcUserIdentity()){ ?>
-                            <li class="active"><a href="<?php echo $this->url('album') ?>"><?php echo $this->translate('Album') ?></a></li>
-                             <?php if($this->zfcUserIdentity()->getRoleID() != 2){ ?>
+                            <?php if($this->zfcUserIdentity()->getRoleID() != 2){ ?>
                                 <li class="active"><a href="<?php echo $this->url('proposal') ?>"><?php echo $this->translate('Proposals') ?></a></li>
                             <?php }?>
                             <li class="active"><a href="<?php echo $this->url('project') ?>"><?php echo $this->translate('Projects') ?></a></li>
