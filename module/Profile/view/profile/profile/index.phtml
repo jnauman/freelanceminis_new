@@ -21,9 +21,9 @@ $this->headTitle($title);
     <td><?php echo $this->escapeHtml($profile->artist);?></td>
     <td>
         <a href="<?php echo $this->url('profile',
-            array('action'=>'edit', 'id' => $profile->id));?>">Edit</a>
+            array('action'=>'edit', 'id' => $profile->id));?>"><span class="edit"></span></a>
         <a href="<?php echo $this->url('profile',
-            array('action'=>'delete', 'id' => $profile->id));?>">Delete</a>
+            array('action'=>'delete', 'id' => $profile->id));?>"><span class="delete"></span></a>
     </td>
 </tr>
 <?php endforeach; ?>

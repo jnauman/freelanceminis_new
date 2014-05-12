@@ -26,6 +26,7 @@ class ProposalForm extends Form
             'name' => 'est_cost',
             'attributes' => array(
                 'type'  => 'text',
+                'class' => 'form-control',
             ),
             'options' => array(
                 'label' => 'Estimated Cost',
@@ -35,6 +36,7 @@ class ProposalForm extends Form
             'name' => 'est_time',
             'attributes' => array(
                 'type'  => 'text',
+                'class' => 'form-control',
             ),
             'options' => array(
                 'label' => 'Estimated Time',
@@ -46,6 +48,7 @@ class ProposalForm extends Form
                 'type'  => 'submit',
                 'value' => 'Go',
                 'id' => 'submitbutton',
+                'class' => 'btn btn-success',
             ),
         ));
     }

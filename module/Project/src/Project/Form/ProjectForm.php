@@ -20,6 +20,8 @@ class ProjectForm extends Form
             'name' => 'game',
             'attributes' => array(
                 'type'  => 'text',
+                'class' => 'form-control',
+                'placeholder' => 'D&D, Warhammer, ect.'
             ),
             'options' => array(
                 'label' => 'Game',
@@ -29,6 +31,8 @@ class ProjectForm extends Form
             'name' => 'count',
             'attributes' => array(
                 'type'  => 'text',
+                'class' => 'form-control',
+                'placeholder' => 'Numbers of Minis'
             ),
             'options' => array(
                 'label' => 'Count',
@@ -39,6 +43,8 @@ class ProjectForm extends Form
             'name' => 'budget',
             'attributes' => array(
                 'type'  => 'text',
+                'class' => 'form-control',
+                'placeholder' => 'In US Dollars'
             ),
             'options' => array(
                 'label' => 'Budget',
@@ -46,20 +52,27 @@ class ProjectForm extends Form
         ));
 
         $this->add(array(
-            'name' => 'detail_level',
-            'attributes' => array(
-                'type'  => 'text',
+             'type' => 'Zend\Form\Element\Select',
+             'name' => 'detail_level',
+             'options' => array(
+                     'label' => 'Detail Level',
+                     'value_options' => array(
+                             'low' => 'Low',
+                             'meduium' => 'Medium',
+                             'high' => 'High',
+                     ),
+             ),
+             'attributes' => array(
+                'class' => 'form-control',
             ),
-            'options' => array(
-                'label' => 'Detail Level',
-            ),
-        ));
+     ));
         $this->add(array(
             'name' => 'submit',
             'attributes' => array(
                 'type'  => 'submit',
                 'value' => 'Go',
                 'id' => 'submitbutton',
+                'class' => 'btn btn-success'
             ),
         ));
     }

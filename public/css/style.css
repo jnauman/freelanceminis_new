@@ -48,3 +48,61 @@ input {
 footer{
   margin-top:150px;
 }
+
+.edit {
+  display:inline-block;
+  height:16px;
+  width:16px;
+  background: url('/img/glyphicons-halflings.png') 0 -73px;
+}
+
+.edit:hover {
+  display:inline-block;
+  height:16px;
+  width:16px;
+  background: url('/img/glyphicons-halflings-hover.png') 0 -73px;
+}
+
+.delete {
+  display:inline-block;
+  height:16px;
+  width:16px;
+  background: url('/img/glyphicons-halflings.png') -454px 0;
+}
+
+.delete:hover {
+  display:inline-block;
+  height:16px;
+  width:16px;
+  background: url('/img/glyphicons-halflings-hover.png') -454px 0;
+}
+
+.view {
+  display:inline-block;
+  height:16px;
+  width:16px;
+  background: url('/img/glyphicons-halflings.png') -408px -121px;
+}
+
+.view:hover {
+  display:inline-block;
+  height:16px;
+  width:16px;
+  background: url('/img/glyphicons-halflings-hover.png') -408px -121px;
+}
+
+.user {
+  padding-top:3px;
+  display:inline-block;
+  height:16px;
+  width:16px;
+  background: url('/img/glyphicons-halflings-hover.png') -167px 2px;
+}
+
+.user:hover {
+  display:inline-block;
+  height:16px;
+  width:16px;
+  background: url('/img/glyphicons-halflings-hover.png') -167px 2px;
+}
+

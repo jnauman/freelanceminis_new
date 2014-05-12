@@ -29,11 +29,11 @@ $this->headTitle($title);
     <td><?php echo $this->escapeHtml($project->date_created);?></td>
     <td>
         <a href="<?php echo $this->url('project',
-            array('action'=>'view', 'id' => $project->id));?>">View</a>
+            array('action'=>'view', 'id' => $project->id));?>"><span class="view"></span></a>
         <a href="<?php echo $this->url('project',
-            array('action'=>'edit', 'id' => $project->id));?>">Edit</a>
+            array('action'=>'edit', 'id' => $project->id));?>"><span class="edit"></span></a>
         <a href="<?php echo $this->url('project',
-            array('action'=>'delete', 'id' => $project->id));?>">Delete</a>
+            array('action'=>'delete', 'id' => $project->id));?>"><span class="delete"></span></a>
     </td>
 </tr>
 <?php endforeach; ?>
