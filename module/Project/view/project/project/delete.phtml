@@ -19,7 +19,7 @@ $url = $this->url('project', array(
 <form action="<?php echo $url; ?>" method="post">
 <div>
     <input type="hidden" name="id" value="<?php echo (int) $project->id; ?>" />
-    <input type="submit" name="del" value="Yes" />
-    <input type="submit" name="del" value="No" />
+    <input type="submit" name="del" value="Yes" class="btn btn-success"/>
+    <input type="submit" name="del" value="No" class="btn btn-success"/>
 </div>
 </form>
