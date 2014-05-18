@@ -2,6 +2,7 @@
     "name": "zendframework/skeleton-application",
     "description": "Skeleton Application for ZF2",
     "license": "BSD-3-Clause",
+    "minimum-stability": "alpha",
     "keywords": [
         "framework",
         "zf2"
@@ -11,10 +12,11 @@
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.3.*",
         "zendframework/zend-developer-tools": "dev-master",
-        "zf-commons/zfc-user": "dev-master",
+        "zf-commons/zfc-user": "1.*",
         "zf-commons/zfc-admin": "0.1.0",
         "bjyoungblood/bjy-profiler": "dev-master",
-        "cdli/user-profile": "dev-master"
+        "goalio/goalio-mailservice": "1.*",
+        "goalio/goalio-forgotpassword": "1.*"
     }
 
 }

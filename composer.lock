@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "da609082c72fc6a6db6ffb4dde4a5bbf",
+    "hash": "a6f482330428ece6591219b43c448e42",
     "packages": [
         {
             "name": "bjyoungblood/bjy-profiler",
@@ -55,52 +55,89 @@
             "time": "2014-04-17 14:44:15"
         },
         {
-            "name": "cdli/user-profile",
-            "version": "dev-master",
+            "name": "goalio/goalio-forgotpassword",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/cdli/CdliUserProfile.git",
-                "reference": "86d0e328e69f3335eabf80a421c6b4d925a12bdd"
+                "url": "https://github.com/goalio/GoalioForgotPassword.git",
+                "reference": "ad09ec7d3bcb27918b88cee1ed8e8a6a7ddc26ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cdli/CdliUserProfile/zipball/86d0e328e69f3335eabf80a421c6b4d925a12bdd",
-                "reference": "86d0e328e69f3335eabf80a421c6b4d925a12bdd",
+                "url": "https://api.github.com/repos/goalio/GoalioForgotPassword/zipball/ad09ec7d3bcb27918b88cee1ed8e8a6a7ddc26ed",
+                "reference": "ad09ec7d3bcb27918b88cee1ed8e8a6a7ddc26ed",
                 "shasum": ""
             },
             "require": {
-                "zendframework/zendframework": "2.*",
-                "zf-commons/zfc-user": "0.*"
+                "goalio/goalio-mailservice": "1.*",
+                "zf-commons/zfc-user": "1.*"
             },
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "CdliUserProfile": "src/"
+                    "GoalioForgotPassword": "src/"
                 },
                 "classmap": [
-                    "./"
+                    "./Module.php"
                 ]
             },
             "notification-url": "http://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
             "authors": [
                 {
-                    "name": "Adam Lundrigan",
-                    "email": "adamlundrigan@cdli.ca",
-                    "homepage": "http://www.cdli.ca/"
+                    "name": "Philipp Dobrigkeit",
+                    "email": "p.dobrigkeit@goalio.de",
+                    "homepage": "http://www.goalio.de"
                 }
             ],
-            "description": "Extensible user profile system for ZfcUser",
-            "homepage": "https://github.com/cdli/CdliUserProfile",
+            "description": "Adding Forgot Password functionalitiy to ZfcUser",
+            "homepage": "https://github.com/goalio/GoalioForgotPassword",
             "keywords": [
-                "profile",
-                "user",
                 "zf2",
                 "zfcuser"
             ],
-            "time": "2013-02-12 12:15:50"
+            "time": "2014-05-12 08:08:13"
+        },
+        {
+            "name": "goalio/goalio-mailservice",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/goalio/GoalioMailService.git",
+                "reference": "6416656c1d24b7b9e62a470ad77f149cde029a2e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/goalio/GoalioMailService/zipball/6416656c1d24b7b9e62a470ad77f149cde029a2e",
+                "reference": "6416656c1d24b7b9e62a470ad77f149cde029a2e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "zendframework/zendframework": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "GoalioMailService": "src/"
+                },
+                "classmap": [
+                    "./Module.php"
+                ]
+            },
+            "notification-url": "http://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Philipp Dobrigkeit",
+                    "email": "p.dobrigkeit@goalio.de",
+                    "homepage": "http://www.goalio.de"
+                }
+            ],
+            "description": "Provide configurable Mail Transport Factories for ZF2",
+            "homepage": "https://github.com/goalio/GoalioMailService",
+            "keywords": [
+                "zf2"
+            ],
+            "time": "2014-04-23 11:06:38"
         },
         {
             "name": "zendframework/zend-developer-tools",
@@ -108,12 +145,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/ZendDeveloperTools.git",
-                "reference": "26af0e670ee7e94bd114b33ce022d5d646fb8117"
+                "reference": "8907edf3a03ae0ac761b43e33b3629ac1b6c3cf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/ZendDeveloperTools/zipball/26af0e670ee7e94bd114b33ce022d5d646fb8117",
-                "reference": "26af0e670ee7e94bd114b33ce022d5d646fb8117",
+                "url": "https://api.github.com/repos/zendframework/ZendDeveloperTools/zipball/8907edf3a03ae0ac761b43e33b3629ac1b6c3cf3",
+                "reference": "8907edf3a03ae0ac761b43e33b3629ac1b6c3cf3",
                 "shasum": ""
             },
             "require": {
@@ -161,7 +198,7 @@
                 "module",
                 "zf2"
             ],
-            "time": "2014-04-28 13:31:11"
+            "time": "2014-05-06 03:29:18"
         },
         {
             "name": "zendframework/zendframework",
@@ -434,16 +471,16 @@
         },
         {
             "name": "zf-commons/zfc-user",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ZF-Commons/ZfcUser.git",
-                "reference": "70eb1db55e33e50f17030674e0353247b3e115c4"
+                "reference": "db5b39df5f640c86299c74f46a91869c09c9a3ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ZF-Commons/ZfcUser/zipball/70eb1db55e33e50f17030674e0353247b3e115c4",
-                "reference": "70eb1db55e33e50f17030674e0353247b3e115c4",
+                "url": "https://api.github.com/repos/ZF-Commons/ZfcUser/zipball/db5b39df5f640c86299c74f46a91869c09c9a3ed",
+                "reference": "db5b39df5f640c86299c74f46a91869c09c9a3ed",
                 "shasum": ""
             },
             "require": {
@@ -507,7 +544,7 @@
             "keywords": [
                 "zf2"
             ],
-            "time": "2014-04-23 21:29:54"
+            "time": "2014-04-17 10:31:44"
         }
     ],
     "packages-dev": [
@@ -516,12 +553,10 @@
     "aliases": [
 
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "alpha",
     "stability-flags": {
         "zendframework/zend-developer-tools": 20,
-        "zf-commons/zfc-user": 20,
-        "bjyoungblood/bjy-profiler": 20,
-        "cdli/user-profile": 20
+        "bjyoungblood/bjy-profiler": 20
     },
     "platform": {
         "php": ">=5.3.3"

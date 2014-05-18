@@ -12,7 +12,7 @@ use Zend\Authentication\AuthenticationService;
 
 class Module
 {
-    protected $whitelist = array('zfcuser/login','home','zfcuser/register');
+    protected $whitelist = array('zfcuser/login','home','zfcuser/register','about','zfcuser/forgotpassword');
 
     
     public function onBootstrap(MvcEvent $e) {

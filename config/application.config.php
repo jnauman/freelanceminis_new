@@ -12,8 +12,10 @@ return array(
         'ZfcBase',
         'ZfcUser',
         'ZfcAdmin',
-        'CdliUserProfile',
-        'Profile'
+        //'CdliUserProfile',
+        'Profile',
+        'GoalioMailService',
+        'GoalioForgotPassword'
     ),
 
     // These are various options for the listeners attached to the ModuleManager
